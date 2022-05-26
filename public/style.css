@@ -23,6 +23,7 @@ main{
 section#cards{
     display: flex;
     justify-content: space-evenly; /* espaços de um para o outro*/
+    flex-wrap: wrap;
     margin-top: 5rem; /* para ficar longe do header*/
 }
 
@@ -44,4 +45,55 @@ section#cards div.card h2{
 
 section#cards div.card p.descricao{
     margin-bottom: 1rem;
+}
+
+section#cadastro {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* quebra linha*/
+     padding: 5rem;
+}
+section#cadastro h2{
+    width: 100%;
+     text-align: center;
+     padding-bottom: 5rem;
+}
+
+section#cadastro form{
+     width: 50%;
+}
+
+section#cadastro form input{
+    width: 100%;
+    padding: .7rem;
+    font-size: 2rem;
+    outline: none;
+    border: solid 2px aquamarine;
+    margin: 0 1rem 1rem 1rem;
+
+}
+section#cadastro form  label{
+     margin: 1rem;  
+     color: #000;
+
+}
+
+section#cadastro form button{
+    padding: .8rem;
+    width: 20%;  /* tamanho*/
+    display: flex; /* centraliza*/
+    justify-content: center; /* centraliza node*/
+    margin: 0 auto ;  /* fica centralizado*/
+    font-size: 1rem;
+    background-color: red;
+    border: solid 1px blue;
+    color: black;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+}
+
+section#cadastro form button:hover{ /* muda a cor quando passa o cursor*/
+    background-color:black ;
+    color: white;
 }
