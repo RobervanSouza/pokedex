@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'B612 Mono', monospace;
+}
+
+header{
+    padding: 2rem;
+    background-color: blueviolet;
+}
+
+ header h1{
+     text-align: center;
+     font-size: 3rem;
+     color: #000;
+
+
+}
+main{
+    margin: 0 10rem 0 10rem;
+}
+section#cards{
+    display: flex;
+    justify-content: space-evenly; /* espaços de um para o outro*/
+    margin-top: 5rem; /* para ficar longe do header*/
+}
+
+
+section#cards div.card{
+    width: 32rem; 
+    box-shadow: inset 0 0 1em gold, 0 0 1em red;
+    padding: 1rem; /* distancia da imagem*/
+}
+
+section#cards div.card img{
+    width: 100%;
+    
+}
+
+section#cards div.card h2{
+    margin-bottom: 1rem;
+}
+
+section#cards div.card p.descricao{
+    margin-bottom: 1rem;
+}
